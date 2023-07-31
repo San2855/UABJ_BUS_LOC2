@@ -5,7 +5,7 @@ const listaLocalizacoes = [
   {'name': 'Praça de eventos', 'latitude': -8.3282630931819, 'longitude': -36.420677011490824},
   {'name': 'Maria Cristina', 'latitude': -8.322165115376684, 'longitude': -36.4131265747507},
   {'name': 'Hotel Lux', 'latitude': -8.342648493218235, 'longitude': -36.417996839356334},
-  {'name': 'Entrada da Cohab 1', 'latitude': 8.3486585, 'longitude': -36.4093192},
+  {'name': 'Entrada da Cohab 1', 'latitude': -8.3486835, 'longitude': -36.4092343},
   {'name': 'Escola Dr. Sebatião Cabral', 'latitude': -8.342163205471854, 'longitude': -36.416830941150298},
   {'name': 'Colégio Éxito', 'latitude': -8.325263839326702, 'longitude': -36.4186024306167},
   {'name': 'Escola Prof. Donino', 'latitude': -8.333162206111101, 'longitude': -36.417373357004664},
@@ -114,7 +114,7 @@ function obterLocalizacao() {
   }
 }
 
-setInterval(obterLocalizacao, 5000); // Chama a função a cada 5 segundos
+setInterval(obterLocalizacao, 120000); // Chama a função a cada 2 minutos
 
 const btnObterLocalizacao = document.getElementById("btnObterLocalizacao");
 btnObterLocalizacao.addEventListener("click", obterLocalizacao);
